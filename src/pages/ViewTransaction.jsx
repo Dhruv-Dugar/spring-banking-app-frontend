@@ -29,4 +29,4 @@ function ViewTransaction() {
   )
 }
 
-export default ViewTransaction
+export default ViewTransaction;
