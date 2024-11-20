@@ -12,7 +12,7 @@ function CreateTransaction() {
 
     const onSubmit = async (data) => {
         try {
-            await axios.post('http://localhost:8080/api/transactions/create', data);
+            const res = await axios.post('http://localhost:8080/api/transactions/create', data);
             console.log(data);
             console.log(res.data);
             notify();
