@@ -27,6 +27,8 @@ function CreateTransaction() {
     <div>
         Create Transaction
         <form onSubmit = {handleSubmit(onSubmit)}>
+            <label>Enter Transaction ID</label>
+            <input {...register('transactionId')} />
             <label>Enter Sender ID</label>
             <input {...register('senderId')} />
             <br/>
