@@ -1,18 +1,21 @@
-import "../Assets/CSS/navbar.css"
-import {Link} from 'react-router-dom'
+import '../styles/navbar.css';
+import { Link } from 'react-router-dom';
+function Navbar() {
+    return (
+        <div>
+            <ul>
+                <li><Link to="/viewtransactions">View All Transactions</Link></li>
+                <li><Link to="/viewcustomers">View All Customers</Link></li>\
+                <li><Link to="/viewuniquetransactions">View Unique Transaction</Link></li>
+                {/* <li><Link to="/viewuniquecustomers">View Unique Customer</Link></li> */}
+                <li><Link to="/CreateTransaction">Create Transaction</Link></li>
+                <li><Link to="/CreateCustomer">Create Customer</Link></li>
+                <li><Link to="/UpdateCustomer">Update Customer</Link></li>
+                <li><Link to='/auth'>auth</Link></li>
+            </ul>
 
-function NavBar() {
-  return (
-    <div>
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/view">View Products</Link></li>
-            <li><Link to="/create">Create Product</Link></li>
-            <li><Link to="/delete">Delete Product</Link></li>
-            <li><Link to="/update">Update Product</Link></li>
-        </ul>
-    </div>
-  )
+        </div>
+    )
 }
 
-export default NavBar
+export default Navbar;
