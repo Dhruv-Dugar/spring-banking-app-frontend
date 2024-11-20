@@ -1,7 +1,7 @@
 const columns = [
     {
         name: "transactionId",
-        selector: row => row.title
+        selector: row => row.transactionId
     },
     {
         name: "senderId",
