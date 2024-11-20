@@ -36,9 +36,8 @@ function ViewUniqueTransaction() {
             <input type='text' id='transactionId' value={transactionId} onChange={handleInputChange} required />
         </div>
 
-        {loading && <div>Loading...</div>}
 
-        {!loading && transactionId && (
+        {transactionId && (
             <div>
                 <h2>Transaction ID: {transactions.transactionId}</h2>
                 <h2>Sender ID: {transactions.senderId}</h2>
